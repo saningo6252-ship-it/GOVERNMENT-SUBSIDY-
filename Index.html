@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Independent assistance information portal.">
+  <title>Government Subsidy | Assistance Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">GS</div>
+  <div>
+    <h2>Government Subsidy</h2>
+    <small>Independent Assistance Information</small>
+  </div>
+</header>
+
+<div class="notice">
+  Independent platform — not affiliated with or operated by the
+  United States government.
+</div>
+
+<nav class="navigation">
+  <a href="#home">Home</a>
+  <a href="#programs">Information</a>
+  <a href="#register">Register</a>
+  <a href="#referrals">Referrals</a>
+</nav>
+
+<main>
+
+<section id="home" class="hero">
+  <h1>Assistance Information Centre</h1>
+  <p>
+    Find information about assistance programmes, eligibility
+    requirements and application procedures.
+  </p>
+  <a class="button" href="#programs">Explore Information</a>
+</section>
+
+<section id="programs" class="section">
+  <h2>Assistance Categories</h2>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Food Assistance</h3>
+      <p>Information about food-support programmes.</p>
+    </article>
+
+    <article class="card">
+      <h3>Household Assistance</h3>
+      <p>Information about household-support programmes.</p>
+    </article>
+
+    <article class="card">
+      <h3>Living Expenses</h3>
+      <p>Information about living-cost support programmes.</p>
+    </article>
+  </div>
+</section>
+
+<section id="register" class="section">
+  <h2>Customer Registration</h2>
+
+  <form id="registerForm">
+    <label>Full Name</label>
+    <input type="text" id="name" required>
+
+    <label>Email Address</label>
+    <input type="email" id="email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label>Country</label>
+    <input type="text" id="country" required>
+
+    <button type="submit" class="button">
+      Create Account
+    </button>
+  </form>
+
+  <p id="registerMessage"></p>
+</section>
+
+<section id="dashboard" class="section hidden">
+  <h2>My Dashboard</h2>
+  <p id="welcome"></p>
+  <p>Application status: Not submitted</p>
+  <p>Payment status: No payment recorded</p>
+
+  <button id="logoutButton" class="secondary">
+    Log Out
+  </button>
+</section>
+
+<section id="payment" class="section">
+  <h2>Payment</h2>
+  <p>
+    View the payment provider's checkout page for the
+    product or service being purchased.
+  </p>
+
+  <a
+    class="button"
+    href="https://selar.com/16886q1815"
+    target="_blank"
+    rel="noopener noreferrer">
+    Pay Through Selar
+  </a>
+</section>
+
+<section id="referrals" class="section">
+  <h2>Referral Centre</h2>
+  <p>Share your personal referral link with others.</p>
+
+  <button class="button" id="referralButton">
+    Generate Referral Link
+  </button>
+
+  <input id="referralLink" readonly
+         placeholder="Your referral link will appear here">
+
+  <button class="secondary" id="copyButton">
+    Copy Referral Link
+  </button>
+
+  <p id="referralMessage"></p>
+</section>
+
+</main>
+
+<footer>
+  <p>Government Subsidy — Independent Information Platform</p>
+  <p>Not an official government website.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
