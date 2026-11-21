@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #263238;
+  line-height: 1.6;
+}
+
+.header {
+  background: #075238;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  background: white;
+  color: #075238;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.header h2 {
+  font-size: 20px;
+}
+
+.notice {
+  background: #fff3cd;
+  color: #664d03;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.navigation {
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #075238;
+  font-weight: bold;
+}
+
+.hero {
+  background: #087f50;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.section {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.section h2 {
+  color: #075238;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #eaf7f0;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card h3 {
+  color: #075238;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  background: #087f50;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.button:hover {
+  background: #075238;
+}
+
+.secondary {
+  background: #263238;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd5d0;
+  border-radius: 8px;
+  margin: 7px 0 17px;
+  font-size: 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+footer {
+  background: #075238;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .section {
+    margin: 18px 12px;
+  }
+  }
